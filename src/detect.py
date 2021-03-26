@@ -66,7 +66,7 @@ def by_sniff_contents(response):
             logging.info("detect.by_sniff_contents: tsv")
             return 'tsv'
         elif dialect.delimiter == '|':
-            logging.info("detect.by_sniff_contents: csv")s
+            logging.info("detect.by_sniff_contents: csv")
             return 'csv'
         else:
             logging.info("detect.by_sniff_contents: None")

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c78e6ddf-fed7-49ef-bc1c-eaf6fd3c75b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tests/samples/tsv_example.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/samples/tsv_example2.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/samples/xml_example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/detect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/test_detect_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/test_detect_file.py" afterDir="false" />
     </list>
@@ -93,7 +90,7 @@
       <updated>1616506406893</updated>
       <workItem from="1616506408923" duration="5304000" />
       <workItem from="1616577233857" duration="2801000" />
-      <workItem from="1616746803230" duration="12615000" />
+      <workItem from="1616746803230" duration="13804000" />
     </task>
     <servers />
   </component>
@@ -112,7 +109,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Clone_for_Task_Assist$Unittests_in_test_detect_file_py.coverage" NAME="Unittests in test_detect_file.py Coverage Results" MODIFIED="1616765289199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
+    <SUITE FILE_PATH="coverage/Clone_for_Task_Assist$Unittests_in_test_detect_file_py.coverage" NAME="Unittests in test_detect_file.py Coverage Results" MODIFIED="1616766898908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/tests" />
     <SUITE FILE_PATH="coverage/Clone_for_Task_Assist$Clone_for_Task_Assist.coverage" NAME="Clone-for-Task-Assist Coverage Results" MODIFIED="1616757372239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

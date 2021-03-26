@@ -59,28 +59,28 @@ class DetectFileTypeTest(TestCase):
         with open_test_file(self.tsv_file) as file:
             self.assertEqual(by_sniff_contents(ResponseMock(fd=file)), "tsv")
 
-    #
-    # def test_all_flow(self):
-    #     headers = {
-    #         'Content-Type': 'text/csv'
-    #     }
-    #     with patch('requests.get') as mock:
-    #         with open_test_file(self.csv_file) as file:
-    #             mock.return_value = ResponseMock(fd=file, headers=headers)
-    #             self.assertEqual(detect_filetype(self.url_csv), "csv")
 
-    #     headers = {
-    #         'Content-Type': 'application/xml'
-    #     }
-    #     with patch('requests.get') as mock:
-    #         with open_test_file(self.xml_file) as file:
-    #             mock.return_value = ResponseMock(fd=file, headers=headers)
-    #             self.assertEqual(detect_filetype(self.url_xml), "xml")
+    def test_all_flow(self):
+        headers = {
+            'Content-Type': 'text/csv'
+        }
+        with patch('requests.get') as mock:
+            with open_test_file(self.csv_file) as file:
+                mock.return_value = ResponseMock(fd=file, headers=headers)
+                self.assertEqual(detect_filetype(self.url_csv), "csv")
 
-    #     headers = {
-    #         'Content-Type': 'text/tab-separated-values'
-    #     }
-    #     with patch('requests.get') as mock:
-    #         with open_test_file(self.tsv_file) as file:
-    #             mock.return_value = ResponseMock(fd=file, headers=headers)
-    #             self.assertEqual(detect_filetype(self.url_tsv), "tsv")
+        headers = {
+            'Content-Type': 'application/xml'
+        }
+        with patch('requests.get') as mock:
+            with open_test_file(self.xml_file) as file:
+                mock.return_value = ResponseMock(fd=file, headers=headers)
+                self.assertEqual(detect_filetype(self.url_xml), "xml")
+
+        headers = {
+            'Content-Type': 'text/tab-separated-values'
+        }
+        with patch('requests.get') as mock:
+            with open_test_file(self.tsv_file) as file:
+                mock.return_value = ResponseMock(fd=file, headers=headers)
+                self.assertEqual(detect_filetype(self.url_tsv), "tsv")
