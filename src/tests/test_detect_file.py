@@ -25,7 +25,6 @@ class DetectFileTypeTest(TestCase):
         file_type = by_file_name(self.tsv_file)
         self.assertEqual(file_type, "tsv")
 
-
     def test_by_content_type_header(self):
         headers = {
             'Content-Type': 'text/csv'
@@ -48,7 +47,6 @@ class DetectFileTypeTest(TestCase):
             self.assertEqual(by_content_type(
                 ResponseMock(fd=file, headers=headers)), "tsv")
 
-
     def test_by_sniff_contents(self):
         with open_test_file(self.csv_file) as file:
             self.assertEqual(by_sniff_contents(ResponseMock(fd=file)), "csv")
@@ -58,7 +56,6 @@ class DetectFileTypeTest(TestCase):
 
         with open_test_file(self.tsv_file) as file:
             self.assertEqual(by_sniff_contents(ResponseMock(fd=file)), "tsv")
-
 
     def test_all_flow(self):
         headers = {

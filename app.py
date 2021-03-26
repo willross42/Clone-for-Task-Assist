@@ -48,5 +48,6 @@ def catalog_type():
     finally:
         logging.info("app.catalogue_type: Catalogue file extension detected - %s", cat_ext)
 
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True)
